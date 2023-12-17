@@ -1,0 +1,14 @@
+@host=http://localhost:8080
+
+###
+POST {{host}}/accounts
+Content-Type: application/json
+
+{
+  "owner":"Quang Pham",
+  "currency":"USD"
+}
+###
+GET {{host}}/accounts/1
+###
+GET {{host}}/accounts?page_id=30&page_size=5
